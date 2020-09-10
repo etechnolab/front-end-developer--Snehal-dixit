@@ -1,0 +1,68 @@
+body 
+	    {  
+         font-family: Times New Roman;  
+         background-color: pink;  
+         }  
+	
+    .container 
+	    {  
+         padding:50px; 
+         background-color:lightblue;	
+         border-radius:7px;		 
+        }  
+	
+    div 
+	    {  
+         padding: 10px 0px;
+		       	 
+        }  
+	
+    hr 
+	    {  
+         border: 1px solid black; 
+	     margin-bottom: 25px;
+        }  
+
+    .registerbtn 
+	    {  
+         background-color:#3390FF ;  
+		 color: black;  
+	     padding: 20px 30px;  
+         margin: 10px 0;  
+         border-radius:7px;  
+         cursor: pointer;       
+         opacity: 0.9; 
+		 
+		 
+        } 
+		
+    .registerbtn:hover 
+	    {  
+         opacity: 5;  
+        } 
+		
+	.allborders
+        {
+         border-radius:7px;  
+		 padding-left:30px;
+		 padding-right:30px;
+		 padding-top:20px;
+		 padding-bottom:20px;
+		 
+		}
+		
+	.head 
+	    {
+		 background-color:black;
+		 text-align:centre;	
+		 color:white;
+		 font-family:Calibri;
+		 
+	    } 
+	
+    .foot 
+	    {
+		 background-color:black;
+		 color:white;
+		 
+	    }
