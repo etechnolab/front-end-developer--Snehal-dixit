@@ -1,0 +1,96 @@
+function form_validation()
+    {
+     //Name Validation 
+        var illegalChars = /\W/;
+        var name = document.reg_form.Name; 
+	    if(name.value.length <= 0) 
+	       {
+                                   alert("please enter your name");
+	                     return false;
+		   }
+		  else if(name.value.length == 1)
+		       {		
+		            alert("Please enter the correct name");
+			  return false;
+     	                                        }
+			 else if(illegalChars.test(name.value))
+			 {	 
+		                        alert("name contains illegal characters");
+		                         name.focus();
+			    return false;
+			 }		
+		
+    		
+       //E-mail Validation 
+	  		       
+   var email = document.reg_form.Email; 
+   if(email.value.length <= 0)
+       {
+         alert("Enter your email");
+         email.focus();
+         return false;
+      }
+           
+		     
+       /* var regx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+        var email = document.reg_form.Email;
+        if(regx.test(email.value))
+           {
+            return true;
+           }
+            else
+            {
+             alert("please Enter valid E-mail");
+             email.focus();
+           return false;
+           }*/
+		   
+		   
+    //Address Validation 
+		
+       var phone = document.reg_form.Phone; 
+       if(phone.value.length <= 0 || phone.value.length !=10 || phone.value.length <10 )
+             {
+                  alert("Enter 10 digit mobile number");
+                  return false;	
+            }
+               else if(illegalChars.test(phone.value))
+	 {	 
+                        alert("Enter valid mobile number");
+                         name.focus();
+	     return false;
+			 
+                     }		
+             		 
+		  
+//Address Validation  
+        var address = document.reg_form.Address; 
+        if(address.value.length <= 0)
+            {
+            alert("Enter your address");
+             address.focus();
+             return false;
+             }	
+		   
+// Gender Validation
+       var gender = document.reg_form.Gender; 
+       if(gender.value.length <= 0)
+           {
+            alert("please select the gender");
+            gender.focus();
+            return false;
+           }
+		   
+//FeedBack Validation   
+        var feedback = document.reg_form.FeedBack; 
+        if(feedback.value.length >= 10)
+          {
+           alert("Enter your FeedBack");
+           feedback.focus();
+           return false;
+          }
+		   
+return false; 	   			 
+ }  
+	
+ 
